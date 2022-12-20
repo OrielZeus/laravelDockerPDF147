@@ -59,6 +59,7 @@
                                     PDF147 is a type of barcode that encodes information in a machine-readable format. It is commonly used to store and transfer data in a variety of industries, including healthcare, logistics, and retail.
                                     PDF147 provides a secure and reliable way to store and transfer data, which helps protect sensitive information and prevent unauthorized access.
                                     To learn more about PDF147 and how it is used in Oriel, visit the Oriel website or contact their customer support team.
+                                    Oriel
                                 </div>
                             </div>
                             <div class="ml-12">

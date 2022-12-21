@@ -27,3 +27,17 @@ Route::get('/home', function () {
     $img = $renderer->render($data);
         return view('welcome', compact('img'));
     });
+Route::get('contact', function(){
+    return "Seccion de contactos";
+})->name('contactos');
+Route::get('/',function(){
+    echo "<a href='" . route('contactos') . "'>Contactos 1 </a><br>";
+    echo "<a href='" . route('contactos') . "'>Contactos 2 </a><br>";
+    echo "<a href='" . route('contactos') . "'>Contactos 3 </a><br>";
+    echo "<a href='" . route('contactos') . "'>Contactos 4 </a><br>";
+    echo "<a href='" . route('contactos') . "'>Contactos 5 </a><br>";
+});
+//get with ? means not required value
+Route::get('saludo/{nombre?}',function($nombre = "Invitado"){
+ return "Saludos " . $nombre;
+});

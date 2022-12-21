@@ -38,6 +38,6 @@ Route::get('/',function(){
     echo "<a href='" . route('contactos') . "'>Contactos 5 </a><br>";
 });
 //get with ? means not required value
-Route::get('saludo/{nombre?}',function($nombre = "Invitado"){
+/*Route::get('saludo/{nombre?}',function($nombre = "Invitado"){
  return "Saludos " . $nombre;
-});
+});*/

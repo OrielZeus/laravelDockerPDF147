@@ -7,7 +7,7 @@
 </head>
 <body>
 	<h1>Contact</h1>
-	Bienvenido <?php echo $nombre ?? "Invitado" ?>
+	Bienvenido {{ $nombre ?? "Invitado" }}
 	<nav>
 		<ul>
 			<li>

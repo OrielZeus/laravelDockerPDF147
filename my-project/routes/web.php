@@ -17,7 +17,7 @@ use BigFish\PDF417\Renderers\SvgRenderer;
 |
 */
 
-Route::get('/home', function () {
+Route::get('/pdf417', function () {
     $pdf417 = new PDF417();
     $data = $pdf417->encode('www.facebook.com/oriel401');
 
@@ -37,7 +37,7 @@ Route::get('/',function(){
     echo "<a href='" . route('contactos') . "'>Contactos 4 </a><br>";
     echo "<a href='" . route('contactos') . "'>Contactos 5 </a><br>";
 });
-//get with ? means not required value
+//get with ? means not required value https://omb.cloud.processmaker.net/webentry/request/166/complete_information (edited)
 Route::get('saludo/{nombre?}',function($nombre = "Invitado"){
  return "Saludos " . $nombre;
 });

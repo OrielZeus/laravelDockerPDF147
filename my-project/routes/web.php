@@ -37,6 +37,20 @@ Route::get('/',function(){
     echo "<a href='" . route('contactos') . "'>Contactos 4 </a><br>";
     echo "<a href='" . route('contactos') . "'>Contactos 5 </a><br>";
 });
+
+Route::get('/', function(){
+    $nombre = "Oriel";
+    //return view('home')->with('nombre', $nombre);
+    //return view('home')->with(['nombre' => $nombre]);
+    //return view('home', ['nombre' => $nombre]);
+    return view('home', compact('nombre'));
+})->name('home');
+
+// for privaci politics is better to use view only if we show informaition
+Route::view('/view_home', 'home')->name('view_home');
+Route::view('/about', 'about')->name('about');
+Route::view('/portafolio', 'portfolio')->name('portfolio');
+Route::view('/contact', 'contact')->name('contact');
 //get with ? means not required value
 /*Route::get('saludo/{nombre?}',function($nombre = "Invitado"){
  return "Saludos " . $nombre;
